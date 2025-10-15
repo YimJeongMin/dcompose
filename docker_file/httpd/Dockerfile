@@ -5,8 +5,8 @@ RUN ["apt-get", "update"]
 
 # code
 RUN ["apt-get", "install", "-y",  "git"]
-RUN ["git", "clone", "https://github.com/dMario24/dMario24.github.io.git", "/usr/local/apache2/app/blog"]
-
+#RUN ["git", "clone", "https://github.com/dMario24/dMario24.github.io.git", "/usr/local/apache2/app/blog]
+RUN ["git", "clone", "https://github.com/YimJeongMin/first-deploy.git", "/usr/local/apache2/app/blog"]
 # change apache2 conf
 COPY ["httpd.conf", "/usr/local/apache2/conf/"]
 
